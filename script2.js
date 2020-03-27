@@ -1,10 +1,19 @@
 //Section for enabling use of cookies
 
 window.onload = function() {
-
+var flipped = 0;
 document.getElementById('playeraid').addEventListener('click', function (e) {
-  var img = document.getElementById('playeraid');
-  img.setAttribute('src', 'PlayerAid/pab.png');
+  if(flipped == 0)
+  {
+    var img = document.getElementById('playeraid');
+    img.setAttribute('src', 'PlayerAid/pab.png');
+    flipped = 1;
+  }
+  else{
+    var img = document.getElementById('playeraid');
+    img.setAttribute('src', 'PlayerAid/paf.png');
+    flipped = 0;
+  }
 });
 
 };

@@ -41,7 +41,7 @@ html{
   color: white;
 }
 
-.chooseCards, .hand{
+.chooseCards, .hand {
   height:300px;
   width:200px;
   cursor: pointer;
@@ -114,6 +114,15 @@ html{
   width:1400px;
 }
 
+#playeraid {
+  height:300px;
+  width:200px;
+  cursor: pointer;
+  padding: 3px;
+  border: 4px solid black;
+  transition: width 0.35s ease-in-out, height 0.35s ease-in-out;
+}
+
 .card-in-play, .active-card{
   height:250px;
   width:167px;
@@ -154,11 +163,11 @@ html{
   border: 3px solid white;
 }
 
-#status-effects, #xp, #health, #bear-effects, #loot, #playeraid {
+#status-effects, #xp, #health, #bear-effects, #loot, #ref {
   border: 1px solid white;
 }
 
- #xp, #health, #loot, #playeraid {
+ #xp, #health, #loot, #ref {
    min-width: 33%;
  }
 #spacer{
