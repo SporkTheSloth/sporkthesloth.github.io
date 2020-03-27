@@ -1842,6 +1842,7 @@ function confirmCharacter(){
         handCardBack.src = flippedCard;
       }).call(this,j);
     }
+    cardHand11.src = "PlayerAid/btbr.png";
     switch (levelCount) {
       case 1:
       maxHealth = 6;
