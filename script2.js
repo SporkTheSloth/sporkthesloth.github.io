@@ -1,5 +1,14 @@
 //Section for enabling use of cookies
 
+window.onload = function() {
+
+document.getElementById('playeraid').addEventListener('click', function (e) {
+  var img = document.getElementById('playeraid');
+  img.setAttribute('src', './playeraid/pab.png');
+});
+
+};
+
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
