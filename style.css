@@ -154,11 +154,11 @@ html{
   border: 3px solid white;
 }
 
-#status-effects, #xp, #health, #bear-effects, #loot {
+#status-effects, #xp, #health, #bear-effects, #loot, #playeraid {
   border: 1px solid white;
 }
 
- #xp, #health, #loot {
+ #xp, #health, #loot, #playeraid {
    min-width: 33%;
  }
 #spacer{
