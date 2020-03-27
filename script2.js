@@ -4,7 +4,7 @@ window.onload = function() {
 
 document.getElementById('playeraid').addEventListener('click', function (e) {
   var img = document.getElementById('playeraid');
-  img.setAttribute('src', './PlayerAid/pab.png');
+  img.setAttribute('src', 'PlayerAid/pab.png');
 });
 
 };
