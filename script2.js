@@ -1815,7 +1815,9 @@ function confirmCharacter(){
     document.getElementById("beast-tyrant-perks").classList.remove("hiding");
     flippedCard = "./bmBack.jpg";
     handSize = 10
-    cardHand11.classList.add("hiding");
+    //Set card 11 to reference card, make it unselectable.
+    cardHand11.src = "playeraid/btbr.png";
+    cardHand12.classList.remove("PR");
     cardHand12.classList.add("hiding");
     document.getElementById("bear-health").classList.remove("hiding");
     document.getElementById("bear-health-counter").classList.remove("hiding");
