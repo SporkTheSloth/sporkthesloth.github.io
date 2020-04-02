@@ -15,7 +15,7 @@ document.getElementById('playeraid').addEventListener('click', function (e) {
     flipped = 0;
   }
 });
-
+document.getElementById("storeTest").innerHTML = buildAndShow();
 };
 
 function setCookie(cname, cvalue, exdays) {
