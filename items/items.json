@@ -83,18 +83,31 @@
     {"id":"828" , "name":"Falcon Figurine" , "type":"Small" , "use":"Trash" , "img":"828"}
     {"id":"829" , "name":"Falcon Figurine" , "type":"Small" , "use":"Trash" , "img":"828"}
 
+    {"id":"836" , "name":"Hooked Chain" , "type":"TwoHand" , "use":"Refresh" , "img":"836"}
+    {"id":"837" , "name":"Hooked Chain" , "type":"TwoHand" , "use":"Refresh" , "img":"836"}
+
     {"id":"909" , "name":"Circlet of Elements" , "type":"Helmet" , "use":"Refresh" , "img":"909"}
     {"id":"910" , "name":"Circlet of Elements" , "type":"Helmet" , "use":"Refresh" , "img":"909"}
+
+    {"id":"913" , "name":"Inferno Blade" , "type":"OneHand" , "use":"Constant" , "img":"913"}
+    {"id":"914" , "name":"Inferno Blade" , "type":"OneHand" , "use":"Constant" , "img":"913"}
 
     {"id":"925" , "name":"Steel Ring" , "type":"Small" , "use":"Trash" , "img":"925"}
     {"id":"926" , "name":"Steel Ring" , "type":"Small" , "use":"Trash" , "img":"925"}
 
     {"id":"941" , "name":"Flea-Bitten Shawl" , "type":"Body" , "use":"Constant" , "img":"941"}
 
+    {"id":"943" , "name":"Horned Helm" , "type":"Helmet" , "use":"Constant" , "img":"943"}
+    {"id":"944" , "name":"Horned Helm" , "type":"Helmet" , "use":"Constant" , "img":"943"}
+
     {"id":"949" , "name":"Ancient Drill" , "type":"TwoHand" , "use":"Trash" , "img":"949"}
     {"id":"950" , "name":"Ancient Drill" , "type":"TwoHand" , "use":"Trash" , "img":"949"}
+
     {"id":"951" , "name":"Skullbane Axe" , "type":"TwoHand" , "use":"Refresh" , "img":"951"}
 
+    {"id":"954" , "name":"Fueled Falchion" , "type":"OneHand" , "use":"Constant" , "img":"954"}
+    {"id":"955" , "name":"Fueled Falchion" , "type":"OneHand" , "use":"Constant" , "img":"954"}
+    
     {"id":"964" , "name":"Ring of Skulls" , "type":"Small" , "use":"Trash" , "img":"964"}
     {"id":"965" , "name":"Ring of Skulls" , "type":"Small" , "use":"Trash" , "img":"964"}
 ]
