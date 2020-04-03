@@ -14,6 +14,30 @@ function loadItems() {
   return allItems;
 }
 
+function loadItems2() {
+  var allItems;
+  $.ajax({
+    'async': false,
+    'global': false,
+    'url': "/items/items.json",
+    'dataType': "json",
+    'success': function(data) {
+      allItems = data;
+    }
+  });
+  return allItems;
+}
+
+function loadItems3() {
+  fetch('https://sporkthesloth.github.io/items/items.json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  });
+}
+
 //returns the highest number of items from base store based on prosperity level
 function getInvLevel(prosp) {
 var maxItem = 0;
@@ -56,6 +80,7 @@ function buildStore(aItems, prosp) {
   for (var i in aItems) {
     if (i.id <= invLevel)
     {
+      alert("current item:"+aItems[i].name);
       objects.push(aItems[i]);
     }
   }
@@ -94,7 +119,7 @@ function displayStore(store) {
 }
 
 function buildAndShow(){
-  var allI = loadItems();
+  var allI = loadItems3();
   var store = buildStore(allI, 4);
   var storedisplay = displayStore(store);
   return storedisplay;
