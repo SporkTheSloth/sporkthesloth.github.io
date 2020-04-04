@@ -230,7 +230,7 @@ function displayItems() {
     html += "<td><img id=item"+i+" class='item personal-item' src=/items/images/"+personalItems[i]+".png alt=card"+i+" /></td>";
     //roll to next row
     var next = i+1;
-    if(next%5==0 && next!=store.length)
+    if(next%5==0 && next!=personalItems.length)
     {
       html += "</tr><tr>";
     }
