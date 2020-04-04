@@ -16,6 +16,20 @@ document.getElementById('playeraid').addEventListener('click', function (e) {
   }
 });
 document.getElementById("storeTest").innerHTML = buildAndShow();
+//USED to make store selectable
+var storelist = document.querySelectorAll(".inStore");
+for (var i = 0; i < storelist.length; i++) {
+  (function () {
+  var storeCard = storelist[i];
+    storeCard.onclick = (function () {
+      if(!isSelectedItem(storeCard)){
+        storeCard.classList.add("add-border-i");
+      } else if (isSelectedItem(storeCard)){
+        storeCard.classList.remove("add-border-i");
+      }
+    });
+  }).call(this, i);
+};
 };
 
 function setCookie(cname, cvalue, exdays) {
@@ -709,6 +723,7 @@ let goBack = document.getElementById('go-back1');
 let goBack2 = document.getElementById('go-back2');
 let loseHandCard = document.getElementById('lose-hand-card');
 let loseDiscardButton = document.getElementById('lose-discard-button2');
+let addToPersonalItems = document.getElementById('addPersonalItems');
 //play cards variables
 
 let playCard1 = "";
@@ -2409,6 +2424,13 @@ const isSelected = card => {
   }
 };
 
+const isSelectedItem = storeItem => {
+  if (storeItem.classList.contains("add-border-i")){
+    return true;
+  } else {
+    return false;
+  }
+};
 const isFlipped = card => {
   if (card.classList.contains("flipped")){
     return true;
@@ -2561,7 +2583,17 @@ for (var i = 0; i < hand.length; i++) {
     });
   }).call(this, i);
 };
-
+//Adds all selected store cards to Personal Item inventory.
+addToPersonalItems.onclick = () => {
+  var personalItems = [];
+  var selectedStoreItems = document.querySelectorAll(".add-border-i");
+  for (var i = 0; i < selectedStoreItems.length; i++) {
+     personalItems.push(selectedStoreItems[i]);
+     selectedStoreItems[i].classList.remove('add-border-i')
+  }
+  alert("Hello\nHow are you?");
+  alert("number of personal items "+personalItems.length);
+}
 playCardsButton.onclick = () => {
   //document.getElementById("hand-cards").style.backgroundColor = "red";
   if(cardCount === 2 && mustLoseCount<1 && !(shortResting) && !(longResting)){

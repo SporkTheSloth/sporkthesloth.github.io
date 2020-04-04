@@ -108,7 +108,7 @@ var data = '{ "items" : [' +
 
   '{"id":"954" , "name":"Fueled Falchion" , "type":"OneHand" , "use":"Constant" , "img":"954"},' +
   '{"id":"955" , "name":"Fueled Falchion" , "type":"OneHand" , "use":"Constant" , "img":"954"},' +
-  
+
   '{"id":"964" , "name":"Ring of Skulls" , "type":"Small" , "use":"Trash" , "img":"964"},' +
   '{"id":"965" , "name":"Ring of Skulls" , "type":"Small" , "use":"Trash" , "img":"964"}' +
 ']}';
@@ -163,16 +163,11 @@ async function buildStore(aItems, prosp) {
   var humorme = 0;
   var invLevel = getInvLevel(prosp);
   aItems.then(function(data) {
-    console.log('WTF',data);
-    console.log('WTF',data.items.length);
     humorme = data.items.length;
     for (var i = 0; i < data.items.length; i++) {
-      console.log('WTF',i);
       if ( data.items[i].id <= invLevel)
       {
-        console.log('WTF',data.items[i].id);
         objects.push(data.items[i]);
-        console.log('MORE',objects.length);
       }
     }
   });
@@ -184,16 +179,11 @@ function buildStore2(aitems, prosp) {
   var data = JSON.parse(aitems);
   var humorme = 0;
   var invLevel = getInvLevel(prosp);
-    console.log('WTF',data);
-    console.log('WTF',data.items.length);
     humorme = data.items.length;
     for (var i = 0; i < data.items.length; i++) {
-      console.log('WTF',i);
       if ( data.items[i].id <= invLevel)
       {
-        console.log('WTF',data.items[i].id);
         objects.push(data.items[i]);
-        console.log('MORE',objects.length);
       }
     };
   return objects;
@@ -218,7 +208,7 @@ function displayStore(store) {
   //loop through avaialable items
   for(var i = 0; i<store.length; i++)
   {
-    html += "<td><img id="+store[i].id+" src=./items/images/"+store[i].img+".png alt=card "+store[i].id+"/></td>";
+    html += "<td><img id="+store[i].id+" class='item inStore' src=./items/images/"+store[i].img+".png alt=card"+store[i].id+"/></td>";
     //roll to next row
     var next = i+1;
     if(next%5==0 && next!=store.length)
