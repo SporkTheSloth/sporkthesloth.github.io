@@ -2569,7 +2569,6 @@ confirmHandButton.onclick = () => {
     var personalCard = personalList[i];
       personalCard.onclick = (function () {
         if(!isTappedItem(personalCard)){
-          personalCard.img.style.transform = "rotate(90deg)";
           personalCard.classList.add("tapped");
         } else if (isTappedItem(personalCard)){
           personalCard.classList.add("hiding");
@@ -3586,7 +3585,6 @@ longRestButton.onclick = () => {
   var tappedList = document.querySelectorAll(".tapped");
   for (var i = 0; i < tappedList.length; i++) {
     var tappedCard = tappedList[i];
-          tappedCard.img.style.transform = "rotate(270deg)";
           tappedCard.classList.remove("tapped");
   }
 }
