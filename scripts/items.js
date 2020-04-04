@@ -148,7 +148,7 @@ switch(prosp) {
   maxItem = 828;
   break;
  case 8:
-  maxItem = 828;
+  maxItem = 1050;
   break;
  case 9:
   maxItem = 904;
