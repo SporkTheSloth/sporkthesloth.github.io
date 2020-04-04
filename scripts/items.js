@@ -219,6 +219,25 @@ function displayStore(store) {
   html+= "</tr></table>";
   return html;
 }
+function displayItems() {
+  var personalItems = [];
+  var cookieString = getCookie("personalItems");
+  personalItems = JSON.parse(cookieString);
+  html = "<table><tr>";
+  //loop through avaialable items
+  for(var i = 0; i<personalItems.length; i++)
+  {
+    html += "<td><img id=item"+i+" class=item src=/items/images/"+personalItems[i]+".png alt=card"+i+"/></td>";
+    //roll to next row
+    var next = i+1;
+    if(next%5==0 && next!=store.length)
+    {
+      html += "</tr><tr>";
+    }
+  }
+  html+= "</tr></table>";
+  return html;
+}
 
 function buildAndShow(){
   //var allI = loadItems2();

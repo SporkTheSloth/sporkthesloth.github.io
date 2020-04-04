@@ -39,6 +39,13 @@ function setCookie(cname, cvalue, exdays) {
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
+function setItemCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  var expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + JSON.stringify(cvalue) + ";" + expires + ";path=/";
+}
+
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -54,7 +61,18 @@ function getCookie(cname) {
     }
     return "";
 }
-
+function checkForPersonalItems() {
+  var personalItems = [];
+   var cookieString = getCookie("personalItems");
+   if (cookieString == "" || cookieString == null)
+   {
+     personalItems = [];
+   }
+   else {
+     personalItems = JSON.parse(cookieString);
+   }
+   return personalItems;
+}
 function checkCookie() {
     var characterSelection = getCookie("character");
     var currentLevel = getCookie("level");
@@ -724,6 +742,7 @@ let goBack2 = document.getElementById('go-back2');
 let loseHandCard = document.getElementById('lose-hand-card');
 let loseDiscardButton = document.getElementById('lose-discard-button2');
 let addToPersonalItems = document.getElementById('addPersonalItems');
+let storeZone = document.getElementById('storeZone');
 //play cards variables
 
 let playCard1 = "";
@@ -2532,6 +2551,10 @@ confirmHandButton.onclick = () => {
   xpDown.classList.add("at-min");
   decreaseTrackerSize.classList.add("at-min");
   loseHandCard.classList.remove("hiding");
+  //Display personal items for use
+  storeZone.classList.add("hiding");
+  document.getElementById("itemRow").innerHTML = displayItems();
+
   shuffleDeck();
   }
 }
@@ -2586,13 +2609,13 @@ for (var i = 0; i < hand.length; i++) {
 //Adds all selected store cards to Personal Item inventory.
 addToPersonalItems.onclick = () => {
   var personalItems = [];
+  personalItems = checkForPersonalItems();
   var selectedStoreItems = document.querySelectorAll(".add-border-i");
   for (var i = 0; i < selectedStoreItems.length; i++) {
-     personalItems.push(selectedStoreItems[i]);
+     personalItems.push(selectedStoreItems[i].id);
      selectedStoreItems[i].classList.remove('add-border-i')
   }
-  alert("Hello\nHow are you?");
-  alert("number of personal items "+personalItems.length);
+  setItemCookie("personalItems", personalItems, 365);
 }
 playCardsButton.onclick = () => {
   //document.getElementById("hand-cards").style.backgroundColor = "red";

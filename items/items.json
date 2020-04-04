@@ -107,7 +107,7 @@
 
     {"id":"954" , "name":"Fueled Falchion" , "type":"OneHand" , "use":"Constant" , "img":"954"},
     {"id":"955" , "name":"Fueled Falchion" , "type":"OneHand" , "use":"Constant" , "img":"954"},
-    
+
     {"id":"964" , "name":"Ring of Skulls" , "type":"Small" , "use":"Trash" , "img":"964"},
     {"id":"965" , "name":"Ring of Skulls" , "type":"Small" , "use":"Trash" , "img":"964"}
 ]
