@@ -241,7 +241,7 @@ function displayItems() {
 
 function buildAndShow(){
   //var allI = loadItems2();
-  var store = buildStore2(data, 4);
+  var store = buildStore2(data, 8);
   var storedisplay = displayStore(store);
   return storedisplay;
 }
