@@ -2450,6 +2450,15 @@ const isSelectedItem = storeItem => {
     return false;
   }
 };
+
+const isTappedItem = personalItem => {
+  if (personalItem.classList.contains("tapped")){
+    return true;
+  } else {
+    return false;
+  }
+};
+
 const isFlipped = card => {
   if (card.classList.contains("flipped")){
     return true;
@@ -2554,7 +2563,20 @@ confirmHandButton.onclick = () => {
   //Display personal items for use
   storeZone.classList.add("hiding");
   document.getElementById("itemRow").innerHTML = displayItems();
-
+  var personalList = document.querySelectorAll(".personal-item");
+  for (var i = 0; i < personalList.length; i++) {
+    (function () {
+    var personalCard = personalList[i];
+      personalCard.onclick = (function () {
+        if(!isTappedItem(personalCard)){
+          personalCard.img.style.transform = "rotate(90deg)";
+          personalCard.classList.add("tapped");
+        } else if (isTappedItem(personalCard)){
+          personalCard.classList.add("hiding");
+        }
+      });
+    }).call(this, i);
+  };
   shuffleDeck();
   }
 }
@@ -2612,7 +2634,7 @@ addToPersonalItems.onclick = () => {
   personalItems = checkForPersonalItems();
   var selectedStoreItems = document.querySelectorAll(".add-border-i");
   for (var i = 0; i < selectedStoreItems.length; i++) {
-     personalItems.push(selectedStoreItems[i].id);
+     personalItems.push(selectedStoreItems[i].alt);
      selectedStoreItems[i].classList.remove('add-border-i')
   }
   setItemCookie("personalItems", personalItems, 365);
@@ -3559,6 +3581,13 @@ longRestButton.onclick = () => {
     if (discardsSelected === 1){
       loseCardFromRestButton.classList.remove("not-unless-resting");
     }
+  }
+  //flip back all tapped items
+  var tappedList = document.querySelectorAll(".tapped");
+  for (var i = 0; i < tappedList.length; i++) {
+    var tappedCard = tappedList[i];
+          tappedCard.img.style.transform = "rotate(270deg)";
+          tappedCard.classList.remove("tapped");
   }
 }
 
