@@ -149,7 +149,7 @@ switch(prosp) {
   maxItem = 828;
   break;
  case 8:
-  maxItem = 828;
+  maxItem = 1050;
   break;
  case 9:
   maxItem = 904;
@@ -209,7 +209,7 @@ function displayStore(store) {
   //loop through avaialable items
   for(var i = 0; i<store.length; i++)
   {
-    html += "<td><img id="+store[i].id+" class='item inStore' src=./items/images/"+store[i].img+".png alt=card"+store[i].id+"/></td>";
+    html += "<td><img id="+store[i].id+" class='item inStore' src=./items/images/"+store[i].img+".png alt="+store[i].img+" /></td>";
     //roll to next row
     var next = i+1;
     if(next%5==0 && next!=store.length)
@@ -220,10 +220,29 @@ function displayStore(store) {
   html+= "</tr></table>";
   return html;
 }
+function displayItems() {
+  var personalItems = [];
+  var cookieString = getCookie("personalItems");
+  personalItems = JSON.parse(cookieString);
+  html = "<table><tr>";
+  //loop through avaialable items
+  for(var i = 0; i<personalItems.length; i++)
+  {
+    html += "<td><img id=item"+i+" class='item personal-item' src=/items/images/"+personalItems[i]+".png alt=card"+i+" /></td>";
+    //roll to next row
+    var next = i+1;
+    if(next%5==0 && next!=personalItems.length)
+    {
+      html += "</tr><tr>";
+    }
+  }
+  html+= "</tr></table>";
+  return html;
+}
 
 function buildAndShow(){
   //var allI = loadItems2();
-  var store = buildStore2(data, 4);
+  var store = buildStore2(data, 8);
   var storedisplay = displayStore(store);
   return storedisplay;
 }

@@ -39,6 +39,13 @@ function setCookie(cname, cvalue, exdays) {
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
+function setItemCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  var expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + JSON.stringify(cvalue) + ";" + expires + ";path=/";
+}
+
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -54,7 +61,18 @@ function getCookie(cname) {
     }
     return "";
 }
-
+function checkForPersonalItems() {
+  var personalItems = [];
+   var cookieString = getCookie("personalItems");
+   if (cookieString == "" || cookieString == null)
+   {
+     personalItems = [];
+   }
+   else {
+     personalItems = JSON.parse(cookieString);
+   }
+   return personalItems;
+}
 function checkCookie() {
     var characterSelection = getCookie("character");
     var currentLevel = getCookie("level");
@@ -724,6 +742,7 @@ let goBack2 = document.getElementById('go-back2');
 let loseHandCard = document.getElementById('lose-hand-card');
 let loseDiscardButton = document.getElementById('lose-discard-button2');
 let addToPersonalItems = document.getElementById('addPersonalItems');
+let storeZone = document.getElementById('storeZone');
 //play cards variables
 
 let playCard1 = "";
@@ -2431,6 +2450,15 @@ const isSelectedItem = storeItem => {
     return false;
   }
 };
+
+const isTappedItem = personalItem => {
+  if (personalItem.classList.contains("tapped")){
+    return true;
+  } else {
+    return false;
+  }
+};
+
 const isFlipped = card => {
   if (card.classList.contains("flipped")){
     return true;
@@ -2532,6 +2560,22 @@ confirmHandButton.onclick = () => {
   xpDown.classList.add("at-min");
   decreaseTrackerSize.classList.add("at-min");
   loseHandCard.classList.remove("hiding");
+  //Display personal items for use
+  storeZone.classList.add("hiding");
+  document.getElementById("itemRow").innerHTML = displayItems();
+  var personalList = document.querySelectorAll(".personal-item");
+  for (var i = 0; i < personalList.length; i++) {
+    (function () {
+    var personalCard = personalList[i];
+      personalCard.onclick = (function () {
+        if(!isTappedItem(personalCard)){
+          personalCard.classList.add("tapped");
+        } else if (isTappedItem(personalCard)){
+          personalCard.classList.add("hiding");
+        }
+      });
+    }).call(this, i);
+  };
   shuffleDeck();
   }
 }
@@ -2586,13 +2630,13 @@ for (var i = 0; i < hand.length; i++) {
 //Adds all selected store cards to Personal Item inventory.
 addToPersonalItems.onclick = () => {
   var personalItems = [];
+  personalItems = checkForPersonalItems();
   var selectedStoreItems = document.querySelectorAll(".add-border-i");
   for (var i = 0; i < selectedStoreItems.length; i++) {
-     personalItems.push(selectedStoreItems[i]);
+     personalItems.push(selectedStoreItems[i].alt);
      selectedStoreItems[i].classList.remove('add-border-i')
   }
-  alert("Hello\nHow are you?");
-  alert("number of personal items "+personalItems.length);
+  setItemCookie("personalItems", personalItems, 365);
 }
 playCardsButton.onclick = () => {
   //document.getElementById("hand-cards").style.backgroundColor = "red";
@@ -3536,6 +3580,12 @@ longRestButton.onclick = () => {
     if (discardsSelected === 1){
       loseCardFromRestButton.classList.remove("not-unless-resting");
     }
+  }
+  //flip back all tapped items
+  var tappedList = document.querySelectorAll(".tapped");
+  for (var i = 0; i < tappedList.length; i++) {
+    var tappedCard = tappedList[i];
+          tappedCard.classList.remove("tapped");
   }
 }
 

@@ -338,6 +338,16 @@ transition: width 0.35s ease-in-out, height 0.35s ease-in-out;
     cursor: pointer;
 }
 
+.tapped {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  padding: 30px;
+  border: none;
+}
+
 h6, #cardsInDeck{
   padding: 0;
   margin: 0;
