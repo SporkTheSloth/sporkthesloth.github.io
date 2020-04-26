@@ -92,7 +92,8 @@ var data = '{ "items" : [' +
 
   '{"id":"913" , "name":"Inferno Blade" , "type":"OneHand" , "use":"Constant" , "img":"913"},' +
   '{"id":"914" , "name":"Inferno Blade" , "type":"OneHand" , "use":"Constant" , "img":"913"},' +
-
+   '{"id":"923" , "name":"Minor Cure Potion" , "type":"Small" , "use":"Trash" , "img":"923"},' +
+   '{"id":"924" , "name":"Minor Cure Potion" , "type":"Small" , "use":"Trash" , "img":"923"},' +
   '{"id":"925" , "name":"Steel Ring" , "type":"Small" , "use":"Trash" , "img":"925"},' +
   '{"id":"926" , "name":"Steel Ring" , "type":"Small" , "use":"Trash" , "img":"925"},' +
 
