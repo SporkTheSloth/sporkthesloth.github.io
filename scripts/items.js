@@ -101,6 +101,7 @@ var data = '{ "items" : [' +
 
   '{"id":"943" , "name":"Horned Helm" , "type":"Helmet" , "use":"Constant" , "img":"943"},' +
   '{"id":"944" , "name":"Horned Helm" , "type":"Helmet" , "use":"Constant" , "img":"943"},' +
+  '{"id":"939" , "name":"Drakescale Armor" , "type":"Body" , "use":"Constant" , "img":"939"},' +
   '{"id":"945" , "name":"Drakescale Helm" , "type":"Helmet" , "use":"Constant" , "img":"945"},' +
 
   '{"id":"949" , "name":"Ancient Drill" , "type":"TwoHand" , "use":"Trash" , "img":"949"},' +
