@@ -96,12 +96,13 @@ var data = '{ "items" : [' +
    '{"id":"924" , "name":"Minor Cure Potion" , "type":"Small" , "use":"Trash" , "img":"923"},' +
   '{"id":"925" , "name":"Steel Ring" , "type":"Small" , "use":"Trash" , "img":"925"},' +
   '{"id":"926" , "name":"Steel Ring" , "type":"Small" , "use":"Trash" , "img":"925"},' +
-
+  '{"id":"934" , "name":"Drakescale Boots" , "type":"Legs" , "use":"Constant" , "img":"934"},' +
+  '{"id":"936" , "name":"Robes of Summoning" , "type":"Body" , "use":"Refresh" , "img":"936"},' +
+  '{"id":"939" , "name":"Drakescale Armor" , "type":"Body" , "use":"Constant" , "img":"939"},' +
   '{"id":"941" , "name":"Flea-Bitten Shawl" , "type":"Body" , "use":"Constant" , "img":"941"},' +
 
   '{"id":"943" , "name":"Horned Helm" , "type":"Helmet" , "use":"Constant" , "img":"943"},' +
   '{"id":"944" , "name":"Horned Helm" , "type":"Helmet" , "use":"Constant" , "img":"943"},' +
-  '{"id":"939" , "name":"Drakescale Armor" , "type":"Body" , "use":"Constant" , "img":"939"},' +
   '{"id":"945" , "name":"Drakescale Helm" , "type":"Helmet" , "use":"Constant" , "img":"945"},' +
 
   '{"id":"949" , "name":"Ancient Drill" , "type":"TwoHand" , "use":"Trash" , "img":"949"},' +
