@@ -19,10 +19,17 @@
           <td><img id = "tinkerer" class = "character" src = "./Tinkerer.png"/><br/><p class = "character-title" align = "center">Tinkerer</td>
         </tr>
         <tr>
-          <td><img id = "beastTyrant" class = "character" src = "./bmprofile.png"/><br/><p class = "character-title" align = "center">"Two Minis"</td>
+          <td><img id = "beastTyrant" class = "character" src = "./bmprofile2.png"/><br/><p class = "character-title" align = "center">"Beast Tyrant"</td>
+          <td><img id = "elementalist" class = "character" src = "./elprofile.png"/><br/><p class = "character-title" align = "center">"Elementalist"</td>
+          <td><img id = "sawbones" class = "character" src = "./sbprofile.png"/><br/><p class = "character-title" align = "center">"Sawbones"</td>
+        </tr>
+        <tr>
+          <td><img id = "soothsinger" class = "character" src = "./ssprofile.png"/><br/><p class = "character-title" align = "center">"Soothsinger"</td>
+          <td><img id = "sunkeeper" class = "character" src = "./skprofile.png"/><br/><p class = "character-title" align = "center">"Sunkeeper"</td>
           <td><img id = "doomStalker" class = "character" src = "./dsprofile.png"/><br/><p class = "character-title" align = "center">"Spiky Face"</td>
+        </tr>
+        <tr>
           <td><img id = "nightshroud" class = "character" src = "./nsProfile.png"/><br/><p class = "character-title" align = "center">"Eclipse"</td>
-          <td><img id = "soothsinger" class = "character" src = "./ssprofile.png"/><br/><p class = "character-title" align = "center">"Music Note"</td>
         </tr>
       </table>
       <div id = "level-selection" align = "center">
@@ -695,8 +702,208 @@
             </div>
             <button id ="ssConfirmPerksButton" class ="button" type ="button">Confirm Perks</button>
           </div>
-          <button id = "go-back1" class = "button hiding" type ="button">Go Back To Character Select</button>
+        <div id ="sawbones-perks" class ="perks hiding">
+          <div>
+            <div id ="sbPerk1-1" class = "checkbox sbPerk">
+            </div>
+            <div id ="sbPerk1-2" class = "checkbox sbPerk">
+            </div>
+            <p>Remove Two -1 Cards</p>
+          </div>
+          <div>
+            <div id ="sbPerk2-1" class = "checkbox sbPerk">
+            </div>
+            <p>Remove Four +0 Cards</p>
+          </div>
+          <div>
+            <div id ="sbPerk3-1" class = "checkbox sbPerk">
+            </div>
+            <div id ="sbPerk3-2" class = "checkbox sbPerk">
+            </div>
+            <p>Replace One +0 Card With One +2 cards</p>
+          </div>
+          <div>
+            <div id ="sbPerk4-1" class = "checkbox sbPerk">
+            </div>
+            <div id ="sbPerk4-2" class = "checkbox sbPerk">
+            </div>
+            <p>Add One Rolling +2 Cards</p>
+          </div>
+          <div>
+            <div id ="sbPerk5-1" class = "checkbox sbPerk">
+            </div>
+            <div id ="sbPerk5-2" class = "checkbox sbPerk">
+            </div>
+            <p>Add One +1 IMMOBILIZE Card</p>
+          </div>
+          <div>
+            <div id ="sbPerk6-1" class = "checkbox sbPerk">
+            </div>
+            <div id ="sbPerk6-2" class = "checkbox sbPerk">
+            </div>
+            <p>Add Two Rolling WOUND Cards</p>
+          </div>
+          <div>
+            <div id ="sbPerk7-1" class = "checkbox sbPerk">
+            </div>
+            <p>Add One Rolling STUN Card</p>
+          </div>
+          <div>
+            <div id ="sbPerk8-1" class = "checkbox sbPerk">
+            </div>
+            <div id ="sbPerk8-2" class = "checkbox sbPerk">
+            </div>
+            <p>Add One Rolling HEAL 3 Cards</p>
+          </div>
+          <div>
+            <div id ="sbPerk9-1" class = "checkbox sbPerk">
+            </div>
+            <p>Add One +0 Refresh An Item Card</p>
+          </div>
+          <button id ="sbConfirmPerksButton" class ="button" type ="button">Confirm Perks</button>
         </div>
+      <div id ="sunkeeper-perks" class ="perks hiding">
+        <div>
+          <div id ="skPerk1-1" class = "checkbox skPerk">
+          </div>
+          <div id ="skPerk1-2" class = "checkbox skPerk">
+          </div>
+          <p>Remove Two -1 Cards</p>
+        </div>
+        <div>
+          <div id ="skPerk2-1" class = "checkbox skPerk">
+          </div>
+          <p>Remove Four +0 Cards</p>
+        </div>
+        <div>
+          <div id ="skPerk3-1" class = "checkbox skPerk">
+          </div>
+          <p>Replace One -2 Card With One +0 card</p>
+        </div>
+        <div>
+          <div id ="skPerk4-1" class = "checkbox skPerk">
+          </div>
+          <p>Replace One +0 Card With One +2 card</p>
+        </div>
+        <div>
+          <div id ="skPerk5-1" class = "checkbox skPerk">
+          </div>
+          <div id ="skPerk5-2" class = "checkbox skPerk">
+          </div>
+          <p>Add Two Rolling +1 Cards</p>
+        </div>
+        <div>
+          <div id ="skPerk6-1" class = "checkbox skPerk">
+          </div>
+          <div id ="skPerk6-2" class = "checkbox skPerk">
+          </div>
+          <p>Add Two Rolling HEAL 1 Cards</p>
+        </div>
+        <div>
+          <div id ="skPerk7-1" class = "checkbox skPerk">
+          </div>
+          <p>Add One Rolling STUN Card</p>
+        </div>
+        <div>
+          <div id ="skPerk8-1" class = "checkbox skPerk">
+          </div>
+          <div id ="skPerk8-2" class = "checkbox skPerk">
+          </div>
+          <p>Add Two Rolling LIGHT Cards</p>
+        </div>
+        <div>
+          <div id ="skPerk9-1" class = "checkbox skPerk">
+          </div>
+          <p>Add Two Rolling SHIELD 1 Self Cards</p>
+        </div>
+        <div>
+          <div id ="skPerk10-1" class = "checkbox skPerk">
+          </div>
+          <p>Ignore Negative Item Effects and Add Two +1 Cards</p>
+        </div>
+        <div>
+          <div id ="skPerk11-1" class = "checkbox skPerk">
+          </div>
+          <p>Ignore Negative Scenario Effects</p>
+        </div>
+        <button id ="skConfirmPerksButton" class ="button" type ="button">Confirm Perks</button>
+      </div>
+      <button id = "go-back1" class = "button hiding" type ="button">Go Back To Character Select</button>
+    </div>
+    <div id ="elementalist-perks" class ="perks hiding">
+      <div>
+        <div id ="elPerk1-1" class = "checkbox elPerk">
+        </div>
+        <div id ="elPerk1-2" class = "checkbox elPerk">
+        </div>
+        <p>Remove Two -1 Cards</p>
+      </div>
+      <div>
+        <div id ="elPerk2-1" class = "checkbox elPerk">
+        </div>
+        <p>Replace One -1 Card With One +1 Card</p>
+      </div>
+      <div>
+        <div id ="elPerk3-1" class = "checkbox elPerk">
+        </div>
+        <div id ="elPerk3-2" class = "checkbox elPerk">
+        </div>
+        <p>Replace One +0 Card With One +2 Card</p>
+      </div>
+      <div>
+        <div id ="elPerk4-1" class = "checkbox elPerk">
+        </div>
+        <p>Add Three +0 FIRE Cards</p>
+      </div>
+      <div>
+        <div id ="elPerk5-1" class = "checkbox elPerk">
+        </div>
+        <p>Add Three +0 ICE Cards</p>
+      </div>
+      <div>
+        <div id ="elPerk6-1" class = "checkbox elPerk">
+        </div>
+        <p>Add Three +0 AIR Cards</p>
+      </div>
+      <div>
+        <div id ="elPerk7-1" class = "checkbox elPerk">
+        </div>
+        <p>Add Three +0 Earth Cards</p>
+      </div>
+      <div>
+        <div id ="elPerk8-1" class = "checkbox elPerk">
+        </div>
+        <p>Replace Two +0 Cards With One +0 FLAME  And One +0 LEAF Card</p>
+      </div>
+      <div>
+        <div id ="elPerk9-1" class = "checkbox elPerk">
+        </div>
+        <p>Replace Two +0 Cards With One +0 ICE  And One +0 AIR Card</p>
+      </div>
+      <div>
+        <div id ="elPerk10-1" class = "checkbox elPerk">
+        </div>
+        <p>Add Two +1 PUSH 1 chooseCardsTable</p>
+      </div>
+      <div>
+        <div id ="elPerk11-1" class = "checkbox elPerk">
+        </div>
+        <p>Add One +1 WOUND Card</p>
+      </div>
+      <div>
+        <div id ="elPerk12-1" class = "checkbox elPerk">
+        </div>
+        <p>Add One +0 STUN Card</p>
+      </div>
+      <div>
+        <div id ="elPerk13-1" class = "checkbox elPerk">
+        </div>
+        <p>Add One +0 ADD TARGET Card</p>
+      </div>
+      <button id ="elConfirmPerksButton" class ="button" type ="button">Confirm Perks</button>
+    </div>
+    <button id = "go-back1" class = "button hiding" type ="button">Go Back To Character Select</button>
+  </div>
 
     <div id = "initial-table" class = "cardSet hiding">
       <h2 id ="choose-cards-number" class = "header"></h2>
@@ -754,7 +961,7 @@
         </tr>
         <tr id = "level-8-9">
           <td class = "level">Level 8:</td>
-          <td id = "FO" class = "chooseCardsTable FO" ><imgsrc = "./Level 8 Frenzied Onslaught.png" /></td>
+          <td id = "FO" class = "chooseCardsTable FO" ><img src = "./Level 8 Frenzied Onslaught.png" /></td>
           <td id = "SR" class = "chooseCardsTable SR"><img src = "./Level 8 Selfish Retribution.png" /></td>
           <td class = "level">Level 9:</td>
           <td id = "FYE" class = "chooseCardsTable FYE"><img src ="./Level 9 Face Your End.png" /></td>
@@ -928,6 +1135,10 @@
               <button id="loot-down" class ="at-min" type ="button" style="font-size:15px;">-</button>
               <button id="loot-up" type ="button" style="font-size:15px;">+</button>
             </td>
+            <td id="deck-manager" align = "center" colspan="1">Deck<br>Management<br/>
+              <button id="gain-mp" type ="button" >Gain Medical Pack</button><br/>
+              <button id="gain-lmp" type ="button" >Gain Large Medical Pack</button>
+            </td>
             <td id = "ref" align = "center" colspan = "1">
               <img id="playeraid" src="PlayerAid/paf.png" alt="Player Aid Front" />
             </td>
@@ -937,6 +1148,12 @@
         </div>
     </div>
     <div id = "hand-cards" class = "hiding">
+        <table align = "center">
+          <tr>
+            <td><button id = "play-cards-button" class = "button hiding" type="button" title="Must Select 2 Cards, Not Have Any Cards In Play, And Not Be Resting">Play Cards</button></td>
+            <td><button id = "lose-hand-card" class = "button hiding not-without-more-selected" type = "button" title="Must Have One Card Selected">Lose Card To Avoid Damage</button></td>
+          </tr>
+        </table>
         <table align = "center">
           <tr>
             <td><img id = "card1" class = "hand flipped" src = "./Card Back.png" /></td>
@@ -957,13 +1174,23 @@
             <td><img id = "card11" class = "hand flipped" src = "./Card Back.png" /></td>
             <td><img id = "card12" class = "hand flipped" src = "./Card Back.png" /></td>
           </tr>
+          <tr>
+            <td><img id = "card13" class = "hand flipped hiding" src = "./Card Back.png" /></td>
+            <td><img id = "card14" class = "hand flipped hiding" src = "./Card Back.png" /></td>
+            <td><img id = "card15" class = "hand flipped hiding" src = "./Card Back.png" /></td>
+            <td><img id = "card16" class = "hand flipped hiding" src = "./Card Back.png" /></td>
+          </tr>
+          <tr>
+            <td><img id = "card17" class = "hand flipped hiding" src = "./Card Back.png" /></td>
+            <td><img id = "card18" class = "hand flipped hiding" src = "./Card Back.png" /></td>
+            <td><img id = "card19" class = "hand flipped hiding" src = "./Card Back.png" /></td>
+            <td><img id = "card20" class = "hand flipped hiding" src = "./Card Back.png" /></td>
+          </tr>
         </table>
       </div>
       <div id = "confirm-buttons" class = "hiding"align = "center">
         <button id = "go-back2" class = "button hiding" type ="button">Go Back To Perks</button>
         <button id = "confirm-hand" class = "button not-without-more-selected"type="button" title="Must Have a Full Hand">Confirm Hand</button>
-        <button id = "play-cards-button" class = "button hiding" type="button" title="Must Select 2 Cards, Not Have Any Cards In Play, And Not Be Resting">Play Cards</button>
-        <button id = "lose-hand-card" class = "button hiding not-without-more-selected" type = "button" title="Must Have One Card Selected">Lose Card To Avoid Damage</button>
       </div>
     <div id = "storeZone" class = "storeZone" align = "center">
       <div id = "storeTest" class = "store" align = "center">

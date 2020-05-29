@@ -180,7 +180,7 @@ html{
   border: 3px solid white;
 }
 
-#status-effects, #xp, #health, #bear-effects, #loot, #ref {
+#status-effects, #xp, #health, #bear-effects, #loot, #ref, #deck-manager {
   border: 1px solid white;
 }
 
