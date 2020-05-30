@@ -83,10 +83,22 @@ var data = '{ "items" : [' +
   '{"id":"827" , "name":"Major Stamina Potion" , "type":"Small" , "use":"Trash" , "img":"824"},' +
   '{"id":"828" , "name":"Falcon Figurine" , "type":"Small" , "use":"Trash" , "img":"828"},' +
   '{"id":"829" , "name":"Falcon Figurine" , "type":"Small" , "use":"Trash" , "img":"828"},' +
-
+  '{"id":"830" , "name":"Boots Of Dashing" , "type":"Legs" , "use":"Refresh" , "img":"830"},' +
+  '{"id":"831" , "name":"Boots Of Dashing" , "type":"Legs" , "use":"Refresh" , "img":"830"},' +
+  '{"id":"832" , "name":"Robes Of Evocation" , "type":"Body" , "use":"Refresh" , "img":"832"},' +
+  '{"id":"833" , "name":"Robes Of Evocation" , "type":"Body" , "use":"Refresh" , "img":"832"},' +
+  '{"id":"834" , "name":"Heavy Basinet" , "type":"Helmet" , "use":"Constant" , "img":"834"},' +
+  '{"id":"835" , "name":"Heavy Basinet" , "type":"Helmet" , "use":"Constant" , "img":"834"},' +
   '{"id":"836" , "name":"Hooked Chain" , "type":"TwoHand" , "use":"Refresh" , "img":"836"},' +
   '{"id":"837" , "name":"Hooked Chain" , "type":"TwoHand" , "use":"Refresh" , "img":"836"},' +
-
+  '{"id":"838" , "name":"Versatile Dagger" , "type":"OneHand" , "use":"Constant" , "img":"838"},' +
+  '{"id":"839" , "name":"Versatile Dagger" , "type":"OneHand" , "use":"Constant" , "img":"838"},' +
+  '{"id":"840" , "name":"Major Power Potion" , "type":"Small" , "use":"Trash" , "img":"840"},' +
+  '{"id":"841" , "name":"Major Power Potion" , "type":"Small" , "use":"Trash" , "img":"840"},' +
+  '{"id":"842" , "name":"Major Power Potion" , "type":"Small" , "use":"Trash" , "img":"840"},' +
+  '{"id":"843" , "name":"Major Power Potion" , "type":"Small" , "use":"Trash" , "img":"840"},' +
+  '{"id":"844" , "name":"Ring Of Haste" , "type":"Small" , "use":"Trash" , "img":"840"},' +
+  '{"id":"845" , "name":"Ring Of Haste" , "type":"Small" , "use":"Trash" , "img":"840"},' +
   '{"id":"909" , "name":"Circlet of Elements" , "type":"Helmet" , "use":"Refresh" , "img":"909"},' +
   '{"id":"910" , "name":"Circlet of Elements" , "type":"Helmet" , "use":"Refresh" , "img":"909"},' +
 
