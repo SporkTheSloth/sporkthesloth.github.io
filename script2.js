@@ -815,6 +815,14 @@ let cardHand9 = document.getElementById('card9');
 let cardHand10 = document.getElementById('card10');
 let cardHand11 = document.getElementById('card11');
 let cardHand12 = document.getElementById('card12');
+let cardHand13 = document.getElementById('card13');
+let cardHand14 = document.getElementById('card14');
+let cardHand15 = document.getElementById('card15');
+let cardHand16 = document.getElementById('card16');
+let cardHand17 = document.getElementById('card17');
+let cardHand18 = document.getElementById('card18');
+let cardHand19 = document.getElementById('card19');
+let cardHand20 = document.getElementById('card20');
 
 //cards that are discarded, lost, or active
 let discard1 = document.getElementById('discard1');
@@ -3179,7 +3187,7 @@ for (var i = 0; i < hand.length; i++) {
         if(cardCount === 2){
           playCardsButton.classList.remove("not-without-more-cards");
           loseHandCard.classList.add("not-without-more-selected");
-        } else if(cardCount === 1){
+        } else if(cardCount === 1 && !handCard.classList.contains("mp") && !handCard.classList.contains("lmp")){
           loseHandCard.classList.remove("not-without-more-selected");
         }
       } else if (isSelected(handCard)){
@@ -3228,10 +3236,34 @@ playCardsButton.onclick = () => {
   //document.getElementById("hand-cards").style.backgroundColor = "red";
   if(cardCount === 2 && mustLoseCount<1 && !(shortResting) && !(longResting)){
     if(cardHand1.classList.contains("add-border")){
+      if(cardHand1.classList.contains("mp")){
+        chosenCard1.classList.add("mp");
+        cardHand1.classList.remove("mp");
+      }
+      if(cardHand1.classList.contains("lmp")){
+        chosenCard1.classList.add("lmp");
+        cardHand1.classList.remove("lmp");
+      }
       getCard1(cardHand1);
     }else if(cardHand2.classList.contains("add-border")){
+      if(cardHand2.classList.contains("mp")){
+        chosenCard1.classList.add("mp");
+        cardHand2.classList.remove("mp");
+      }
+      if(cardHand2.classList.contains("lmp")){
+        chosenCard1.classList.add("lmp");
+        cardHand2.classList.remove("lmp");
+      }
       getCard1(cardHand2);
     }else if(cardHand3.classList.contains("add-border")){
+      if(cardHand3.classList.contains("mp")){
+        chosenCard1.classList.add("mp");
+        cardHand3.classList.remove("mp");
+      }
+      if(cardHand3.classList.contains("lmp")){
+        chosenCard1.classList.add("lmp");
+        cardHand3.classList.remove("lmp");
+      }
       getCard1(cardHand3);
     }else if(cardHand4.classList.contains("add-border")){
       getCard1(cardHand4);
@@ -3250,9 +3282,110 @@ playCardsButton.onclick = () => {
     }else if(cardHand11.classList.contains("add-border")){
       getCard1(cardHand11);
     }
+    else if(cardHand13.classList.contains("add-border")){
+      if(cardHand13.classList.contains("mp")){
+        chosenCard1.classList.add("mp");
+        cardHand13.classList.remove("mp");
+      }
+      if(cardHand13.classList.contains("lmp")){
+        chosenCard1.classList.add("lmp");
+        cardHand13.classList.remove("lmp");
+      }
+      getCard1(cardHand13);
+    }
+    else if(cardHand14.classList.contains("add-border")){
+      if(cardHand14.classList.contains("mp")){
+        chosenCard1.classList.add("mp");
+        cardHand14.classList.remove("mp");
+      }
+      if(cardHand14.classList.contains("lmp")){
+        chosenCard1.classList.add("lmp");
+        cardHand14.classList.remove("lmp");
+      }
+      getCard1(cardHand14);
+    }
+    else if(cardHand15.classList.contains("add-border")){
+      if(cardHand15.classList.contains("mp")){
+        chosenCard1.classList.add("mp");
+        cardHand15.classList.remove("mp");
+      }
+      if(cardHand15.classList.contains("lmp")){
+        chosenCard1.classList.add("lmp");
+        cardHand15.classList.remove("lmp");
+      }
+      getCard1(cardHand15);
+    }
+    else if(cardHand16.classList.contains("add-border")){
+      if(cardHand16.classList.contains("mp")){
+        chosenCard1.classList.add("mp");
+        cardHand16.classList.remove("mp");
+      }
+      if(cardHand16.classList.contains("lmp")){
+        chosenCard1.classList.add("lmp");
+        cardHand16.classList.remove("lmp");
+      }
+      getCard1(cardHand16);
+    }
+    else if(cardHand17.classList.contains("add-border")){
+      if(cardHand17.classList.contains("mp")){
+        chosenCard1.classList.add("mp");
+        cardHand17.classList.remove("mp");
+      }
+      if(cardHand17.classList.contains("lmp")){
+        chosenCard1.classList.add("lmp");
+        cardHand17.classList.remove("lmp");
+      }
+      getCard1(cardHand17);
+    }
+    else if(cardHand18.classList.contains("add-border")){
+      if(cardHand18.classList.contains("mp")){
+        chosenCard1.classList.add("mp");
+        cardHand18.classList.remove("mp");
+      }
+      if(cardHand18.classList.contains("lmp")){
+        chosenCard1.classList.add("lmp");
+        cardHand18.classList.remove("lmp");
+      }
+      getCard1(cardHand18);
+    }
+    else if(cardHand19.classList.contains("add-border")){
+      if(cardHand19.classList.contains("mp")){
+        chosenCard1.classList.add("mp");
+        cardHand19.classList.remove("mp");
+      }
+      if(cardHand19.classList.contains("lmp")){
+        chosenCard1.classList.add("lmp");
+        cardHand19.classList.remove("lmp");
+      }
+      getCard1(cardHand19);
+    }
+    else if(cardHand20.classList.contains("add-border")){
+      if(cardHand20.classList.contains("mp")){
+        chosenCard1.classList.add("mp");
+        cardHand20.classList.remove("mp");
+      }
+      if(cardHand20.classList.contains("lmp")){
+        chosenCard1.classList.add("lmp");
+        cardHand20.classList.remove("lmp");
+      }
+      getCard1(cardHand20);
+    }
+
     if(cardHand2.classList.contains("add-border")){
+      if(cardHand2.classList.contains("mp")){
+        chosenCard2.classList.add("mp");
+      }
+      if(cardHand2.classList.contains("lmp")){
+        chosenCard2.classList.add("lmp");
+      }
       getCard2(cardHand2);
     }else if(cardHand3.classList.contains("add-border")){
+      if(cardHand3.classList.contains("mp")){
+        chosenCard2.classList.add("mp");
+      }
+      if(cardHand3.classList.contains("lmp")){
+        chosenCard2.classList.add("lmp");
+      }
       getCard2(cardHand3);
     }else if(cardHand4.classList.contains("add-border")){
       getCard2(cardHand4);
@@ -3272,7 +3405,94 @@ playCardsButton.onclick = () => {
       getCard2(cardHand11);
     }else if(cardHand12.classList.contains("add-border")){
       getCard2(cardHand12);
-    }
+    } else if(cardHand13.classList.contains("add-border")){
+          if(cardHand13.classList.contains("mp")){
+            chosenCard2.classList.add("mp");
+            cardHand13.classList.remove("mp");
+          }
+          if(cardHand13.classList.contains("lmp")){
+            chosenCard2.classList.add("lmp");
+            cardHand13.classList.remove("lmp");
+          }
+          getCard2(cardHand13);
+        }
+        else if(cardHand14.classList.contains("add-border")){
+          if(cardHand14.classList.contains("mp")){
+            chosenCard2.classList.add("mp");
+            cardHand14.classList.remove("mp");
+          }
+          if(cardHand14.classList.contains("lmp")){
+            chosenCard2.classList.add("lmp");
+            cardHand14.classList.remove("lmp");
+          }
+          getCard2(cardHand14);
+        }
+        else if(cardHand15.classList.contains("add-border")){
+          if(cardHand15.classList.contains("mp")){
+            chosenCard2.classList.add("mp");
+            cardHand15.classList.remove("mp");
+          }
+          if(cardHand15.classList.contains("lmp")){
+            chosenCard2.classList.add("lmp");
+            cardHand15.classList.remove("lmp");
+          }
+          getCard2(cardHand15);
+        }
+        else if(cardHand16.classList.contains("add-border")){
+          if(cardHand16.classList.contains("mp")){
+            chosenCard2.classList.add("mp");
+            cardHand16.classList.remove("mp");
+          }
+          if(cardHand16.classList.contains("lmp")){
+            chosenCard2.classList.add("lmp");
+            cardHand16.classList.remove("lmp");
+          }
+          getCard2(cardHand16);
+        }
+        else if(cardHand17.classList.contains("add-border")){
+          if(cardHand17.classList.contains("mp")){
+            chosenCard2.classList.add("mp");
+            cardHand17.classList.remove("mp");
+          }
+          if(cardHand17.classList.contains("lmp")){
+            chosenCard2.classList.add("lmp");
+            cardHand17.classList.remove("lmp");
+          }
+          getCard2(cardHand17);
+        }
+        else if(cardHand18.classList.contains("add-border")){
+          if(cardHand18.classList.contains("mp")){
+            chosenCard2.classList.add("mp");
+            cardHand18.classList.remove("mp");
+          }
+          if(cardHand18.classList.contains("lmp")){
+            chosenCard2.classList.add("lmp");
+            cardHand18.classList.remove("lmp");
+          }
+          getCard2(cardHand18);
+        }
+        else if(cardHand19.classList.contains("add-border")){
+          if(cardHand19.classList.contains("mp")){
+            chosenCard2.classList.add("mp");
+            cardHand19.classList.remove("mp");
+          }
+          if(cardHand19.classList.contains("lmp")){
+            chosenCard2.classList.add("lmp");
+            cardHand19.classList.remove("lmp");
+          }
+          getCard2(cardHand19);
+        }
+        else if(cardHand20.classList.contains("add-border")){
+          if(cardHand20.classList.contains("mp")){
+            chosenCard2.classList.add("mp");
+            cardHand20.classList.remove("mp");
+          }
+          if(cardHand20.classList.contains("lmp")){
+            chosenCard2.classList.add("lmp");
+            cardHand20.classList.remove("lmp");
+          }
+          getCard2(cardHand20);
+        }
     cardCount = 0;
     chosenCard1.src = playCard1;
     chosenCard1.classList.remove("flipped");
@@ -3295,8 +3515,10 @@ chosenCard1.onclick = () => {
     chosenCard1.classList.add("add-border");
     chosenCounter++;
     discardButton.classList.remove("not-without-more-selected");
-    loseButton.classList.remove("not-without-more-selected");
-    activateButton.classList.remove("not-without-more-selected");
+    if(!chosenCard1.classList.contains("mp") && !chosenCard1.classList.contains("lmp")){
+      loseButton.classList.remove("not-without-more-selected");
+      activateButton.classList.remove("not-without-more-selected");
+    }
   } else if (chosenCounter === 1 && isSelected(chosenCard1)){
     chosenCard1.classList.remove("add-border");
     chosenCounter--;
@@ -3306,6 +3528,14 @@ chosenCard1.onclick = () => {
   } else if (chosenCounter == 1 && !isSelected(chosenCard1) && !isFlipped(chosenCard1)){
     chosenCard2.classList.remove("add-border");
     chosenCard1.classList.add("add-border");
+    if(!chosenCard1.classList.contains("mp") && !chosenCard1.classList.contains("lmp") && loseButton.classList.contains("not-without-more-selected")){
+      loseButton.classList.remove("not-without-more-selected");
+      activateButton.classList.remove("not-without-more-selected");
+    }
+    if (chosenCard1.classList.contains("mp") || chosenCard1.classList.contains("lmp")) {
+      loseButton.classList.add("not-without-more-selected");
+      activateButton.classList.add("not-without-more-selected");
+    }
   }
 };
 
@@ -3314,8 +3544,10 @@ chosenCard2.onclick = () => {
     chosenCard2.classList.add("add-border");
     chosenCounter++;
     discardButton.classList.remove("not-without-more-selected");
-    loseButton.classList.remove("not-without-more-selected");
-    activateButton.classList.remove("not-without-more-selected");
+    if(!chosenCard2.classList.contains("mp") && !chosenCard2.classList.contains("lmp")){
+      loseButton.classList.remove("not-without-more-selected");
+      activateButton.classList.remove("not-without-more-selected");
+    }
   } else if (chosenCounter == 1 && isSelected(chosenCard2)){
     chosenCard2.classList.remove("add-border");
     chosenCounter--;
@@ -3325,11 +3557,28 @@ chosenCard2.onclick = () => {
   } else if (chosenCounter == 1 && !isSelected(chosenCard2) && !isFlipped(chosenCard2)){
     chosenCard1.classList.remove("add-border");
     chosenCard2.classList.add("add-border");
+    if(!chosenCard2.classList.contains("mp") && !chosenCard2.classList.contains("lmp") && loseButton.classList.contains("not-without-more-selected")){
+      loseButton.classList.remove("not-without-more-selected");
+      activateButton.classList.remove("not-without-more-selected");
+    }
+    if (chosenCard2.classList.contains("mp") || chosenCard2.classList.contains("lmp")) {
+      loseButton.classList.add("not-without-more-selected");
+      activateButton.classList.add("not-without-more-selected");
+    }
   }
 };
 
 discardButton.onclick = () => {
   if(chosenCard1.classList.contains("add-border") && mustLoseCount<1){
+    if(chosenCard1.classList.contains("lmp")){
+      chosenCard1.classList.remove("lmp");
+      discardButton.classList.add("not-without-more-selected");
+      flipChosenCard(chosenCard1);
+    } else if(chosenCard1.classList.contains("mp")){
+      chosenCard1.classList.remove("mp");
+      discardButton.classList.add("not-without-more-selected");
+      flipChosenCard(chosenCard1);
+    } else {
     if(discard1.classList.contains("flipped")){
       discard1.src = chosenCard1.src;
       discard1.classList.remove("hiding");
@@ -3399,8 +3648,17 @@ discardButton.onclick = () => {
     discardButton.classList.add("not-without-more-selected");
     loseButton.classList.add("not-without-more-selected");
     activateButton.classList.add("not-without-more-selected");
-  }
+  }}
   if(chosenCard2.classList.contains("add-border") && mustLoseCount<1){
+    if(chosenCard2.classList.contains("lmp")){
+      chosenCard2.classList.remove("lmp");
+      discardButton.classList.add("not-without-more-selected");
+      flipChosenCard(chosenCard2);
+    } else if(chosenCard2.classList.contains("mp")){
+      chosenCard2.classList.remove("mp");
+      discardButton.classList.add("not-without-more-selected");
+      flipChosenCard(chosenCard2);
+    } else {
     if(discard1.classList.contains("flipped")){
       discard1.src = chosenCard2.src;
       discard1.classList.remove("hiding");
@@ -3470,7 +3728,7 @@ discardButton.onclick = () => {
     loseButton.classList.add("not-without-more-selected");
     activateButton.classList.add("not-without-more-selected");
       }
-    };
+    }};
 
 loseButton.onclick = () => {
   if(chosenCard1.classList.contains("add-border") && mustLoseCount<1){
@@ -4463,11 +4721,91 @@ xpDown.onclick = () => {
 }
 
 gMed.onclick = () => {
-
+  if(cardHand13.classList.contains("flipped")){
+    cardHand13.src = "./SB/sbmp.png";
+    cardHand13.classList.remove("hiding");
+    cardHand13.classList.remove("flipped");
+    cardHand13.classList.add("mp");
+  } else if(cardHand14.classList.contains("flipped")){
+      cardHand14.src = "./SB/sbmp.png";
+      cardHand14.classList.remove("hiding");
+      cardHand14.classList.remove("flipped");
+      cardHand14.classList.add("mp");
+  } else if(cardHand15.classList.contains("flipped")){
+        cardHand15.src = "./SB/sbmp.png";
+        cardHand15.classList.remove("hiding");
+        cardHand15.classList.remove("flipped");
+        cardHand15.classList.add("mp");
+} else if(cardHand16.classList.contains("flipped")){
+      cardHand16.src = "./SB/sbmp.png";
+      cardHand16.classList.remove("hiding");
+      cardHand16.classList.remove("flipped");
+      cardHand16.classList.add("mp");
+} else if(cardHand17.classList.contains("flipped")){
+      cardHand17.src = "./SB/sbmp.png";
+      cardHand17.classList.remove("hiding");
+      cardHand17.classList.remove("flipped");
+      cardHand17.classList.add("mp");
+} else if(cardHand18.classList.contains("flipped")){
+      cardHand18.src = "./SB/sbmp.png";
+      cardHand18.classList.remove("hiding");
+      cardHand18.classList.remove("flipped");
+      cardHand18.classList.add("mp");
+} else if(cardHand19.classList.contains("flipped")){
+      cardHand19.src = "./SB/sbmp.png";
+      cardHand19.classList.remove("hiding");
+      cardHand19.classList.remove("flipped");
+      cardHand19.classList.add("mp");
+} else if(cardHand20.classList.contains("flipped")){
+      cardHand20.src = "./SB/sbmp.png";
+      cardHand20.classList.remove("hiding");
+      cardHand20.classList.remove("flipped");
+      cardHand20.classList.add("mp");
+}
 }
 
 gLgMed.onclick = () => {
-  
+  if(cardHand13.classList.contains("flipped")){
+    cardHand13.src = "./SB/sblmp.png";
+    cardHand13.classList.remove("hiding");
+    cardHand13.classList.remove("flipped");
+    cardHand13.classList.add("lmp");
+  } else if(cardHand14.classList.contains("flipped")){
+      cardHand14.src = "./SB/sblmp.png";
+      cardHand14.classList.remove("hiding");
+      cardHand14.classList.remove("flipped");
+      cardHand14.classList.add("lmp");
+  } else if(cardHand15.classList.contains("flipped")){
+        cardHand15.src = "./SB/sblmp.png";
+        cardHand15.classList.remove("hiding");
+        cardHand15.classList.remove("flipped");
+        cardHand15.classList.add("lmp");
+} else if(cardHand16.classList.contains("flipped")){
+      cardHand16.src = "./SB/sblmp.png";
+      cardHand16.classList.remove("hiding");
+      cardHand16.classList.remove("flipped");
+      cardHand16.classList.add("lmp");
+} else if(cardHand17.classList.contains("flipped")){
+      cardHand17.src = "./SB/sblmp.png";
+      cardHand17.classList.remove("hiding");
+      cardHand17.classList.remove("flipped");
+      cardHand17.classList.add("lmp");
+} else if(cardHand18.classList.contains("flipped")){
+      cardHand18.src = "./SB/sblmp.png";
+      cardHand18.classList.remove("hiding");
+      cardHand18.classList.remove("flipped");
+      cardHand18.classList.add("lmp");
+} else if(cardHand19.classList.contains("flipped")){
+      cardHand19.src = "./SB/sblmp.png";
+      cardHand19.classList.remove("hiding");
+      cardHand19.classList.remove("flipped");
+      cardHand19.classList.add("lmp");
+} else if(cardHand20.classList.contains("flipped")){
+      cardHand20.src = "./SB/sblmp.png";
+      cardHand20.classList.remove("hiding");
+      cardHand20.classList.remove("flipped");
+      cardHand20.classList.add("lmp");
+}
 }
 
 lootUp.onclick = () => {
