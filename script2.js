@@ -864,6 +864,7 @@ let activateButton = document.getElementById('activate-button');
 let recoverDiscardButton = document.getElementById('recover-discard-button');
 let shortRestButton = document.getElementById('short-rest-button');
 let longRestButton = document.getElementById('long-rest-button');
+let refreshItemsButton = document.getElementById('refresh-items-button');
 let discardActiveCardButton = document.getElementById('discard-active-card');
 let loseActiveCardButton = document.getElementById('lose-active-card');
 let recoverLostCardButton = document.getElementById('recover-lost');
@@ -4425,6 +4426,15 @@ longRestButton.onclick = () => {
       loseCardFromRestButton.classList.remove("not-unless-resting");
     }
   }
+  //flip back all tapped items
+  var tappedList = document.querySelectorAll(".tapped");
+  for (var i = 0; i < tappedList.length; i++) {
+    var tappedCard = tappedList[i];
+          tappedCard.classList.remove("tapped");
+  }
+}
+
+refreshItemsButton.onclick = () => {
   //flip back all tapped items
   var tappedList = document.querySelectorAll(".tapped");
   for (var i = 0; i < tappedList.length; i++) {
