@@ -97,15 +97,25 @@ var data = '{ "items" : [' +
   '{"id":"841" , "name":"Major Power Potion" , "type":"Small" , "use":"Trash" , "img":"840"},' +
   '{"id":"842" , "name":"Major Power Potion" , "type":"Small" , "use":"Trash" , "img":"840"},' +
   '{"id":"843" , "name":"Major Power Potion" , "type":"Small" , "use":"Trash" , "img":"840"},' +
-  '{"id":"844" , "name":"Ring Of Haste" , "type":"Small" , "use":"Trash" , "img":"840"},' +
-  '{"id":"845" , "name":"Ring Of Haste" , "type":"Small" , "use":"Trash" , "img":"840"},' +
+  '{"id":"844" , "name":"Ring of Haste" , "type":"Small" , "use":"Trash" , "img":"844"},' +
+  '{"id":"845" , "name":"Ring of Haste" , "type":"Small" , "use":"Trash" , "img":"844"},' +
+
+  '{"id":"850" , "name":"Pendant of Dark Pacts" , "type":"Small" , "use":"Trash" , "img":"850"},' +
+  '{"id":"851" , "name":"Pendant of Dark Pacts" , "type":"Small" , "use":"Trash" , "img":"850"},' +
+
+  '{"id":"868" , "name":"Black Knife" , "type":"OneHand" , "use":"Refresh" , "img":"868"},' +
+  '{"id":"869" , "name":"Black Knife" , "type":"OneHand" , "use":"Refresh" , "img":"868"},' +
+
   '{"id":"909" , "name":"Circlet of Elements" , "type":"Helmet" , "use":"Refresh" , "img":"909"},' +
   '{"id":"910" , "name":"Circlet of Elements" , "type":"Helmet" , "use":"Refresh" , "img":"909"},' +
 
   '{"id":"913" , "name":"Inferno Blade" , "type":"OneHand" , "use":"Constant" , "img":"913"},' +
   '{"id":"914" , "name":"Inferno Blade" , "type":"OneHand" , "use":"Constant" , "img":"913"},' +
-   '{"id":"923" , "name":"Minor Cure Potion" , "type":"Small" , "use":"Trash" , "img":"923"},' +
-   '{"id":"924" , "name":"Minor Cure Potion" , "type":"Small" , "use":"Trash" , "img":"923"},' +
+  '{"id":"915" , "name":"Brilliant Blade" , "type":"OneHand" , "use":"Constant" , "img":"915"},' +
+  '{"id":"916" , "name":"Brilliant Blade" , "type":"OneHand" , "use":"Constant" , "img":"915"},' +
+
+  '{"id":"923" , "name":"Minor Cure Potion" , "type":"Small" , "use":"Trash" , "img":"923"},' +
+  '{"id":"924" , "name":"Minor Cure Potion" , "type":"Small" , "use":"Trash" , "img":"923"},' +
   '{"id":"925" , "name":"Steel Ring" , "type":"Small" , "use":"Trash" , "img":"925"},' +
   '{"id":"926" , "name":"Steel Ring" , "type":"Small" , "use":"Trash" , "img":"925"},' +
   '{"id":"934" , "name":"Drakescale Boots" , "type":"Legs" , "use":"Constant" , "img":"934"},' +
@@ -124,7 +134,8 @@ var data = '{ "items" : [' +
 
   '{"id":"954" , "name":"Fueled Falchion" , "type":"OneHand" , "use":"Constant" , "img":"954"},' +
   '{"id":"955" , "name":"Fueled Falchion" , "type":"OneHand" , "use":"Constant" , "img":"954"},' +
-
+  '{"id":"958" , "name":"Staff of Elements" , "type":"TwoHand" , "use":"Refresh" , "img":"958"},' +
+  '{"id":"959" , "name":"Staff of Elements" , "type":"TwoHand" , "use":"Refresh" , "img":"958"},' +
   '{"id":"964" , "name":"Ring of Skulls" , "type":"Small" , "use":"Trash" , "img":"964"},' +
   '{"id":"965" , "name":"Ring of Skulls" , "type":"Small" , "use":"Trash" , "img":"964"}' +
 ']}';
