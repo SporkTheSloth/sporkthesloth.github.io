@@ -153,9 +153,9 @@ var data = '{ "items" : [' +
   '{"id":"958" , "name":"Staff of Elements" , "type":"TwoHand" , "use":"Refresh" , "img":"958"},' +
   '{"id":"959" , "name":"Staff of Elements" , "type":"TwoHand" , "use":"Refresh" , "img":"958"},' +
   '{"id":"964" , "name":"Ring of Skulls" , "type":"Small" , "use":"Trash" , "img":"964"},' +
-  '{"id":"965" , "name":"Ring of Skulls" , "type":"Small" , "use":"Trash" , "img":"964"}' +
+  '{"id":"965" , "name":"Ring of Skulls" , "type":"Small" , "use":"Trash" , "img":"964"},' +
 
-  '{"id":"972" , "name":"Helix Ring" , "type":"Small" , "use":"Trash" , "img":"972"},' +
+  '{"id":"972" , "name":"Helix Ring" , "type":"Small" , "use":"Trash" , "img":"972"}' +
 ']}';
 
 
