@@ -99,9 +99,22 @@ var data = '{ "items" : [' +
   '{"id":"843" , "name":"Major Power Potion" , "type":"Small" , "use":"Trash" , "img":"840"},' +
   '{"id":"844" , "name":"Ring of Haste" , "type":"Small" , "use":"Trash" , "img":"844"},' +
   '{"id":"845" , "name":"Ring of Haste" , "type":"Small" , "use":"Trash" , "img":"844"},' +
-
+  '{"id":"846" , "name":"Boots Of Quickness" , "type":"Legs" , "use":"Refresh" , "img":"846"},' +
+  '{"id":"847" , "name":"Boots Of Quickness" , "type":"Legs" , "use":"Refresh" , "img":"846"},' +
+  '{"id":"848" , "name":"Splintmail" , "type":"Body" , "use":"Refresh" , "img":"848"},' +
+  '{"id":"849" , "name":"Splintmail" , "type":"Body" , "use":"Refresh" , "img":"848"},' +
   '{"id":"850" , "name":"Pendant of Dark Pacts" , "type":"Small" , "use":"Trash" , "img":"850"},' +
   '{"id":"851" , "name":"Pendant of Dark Pacts" , "type":"Small" , "use":"Trash" , "img":"850"},' +
+  '{"id":"852" , "name":"Spiked Shield" , "type":"OneHand" , "use":"Refresh" , "img":"852"},' +
+  '{"id":"853" , "name":"Spiked Shield" , "type":"OneHand" , "use":"Refresh" , "img":"852"},' +
+  '{"id":"854" , "name":"Reaping Scythe" , "type":"TwoHand" , "use":"Trash" , "img":"854"},' +
+  '{"id":"855" , "name":"Reaping Scythe" , "type":"TwoHand" , "use":"Trash" , "img":"854"},' +
+  '{"id":"856" , "name":"Major Mana Potion" , "type":"Small" , "use":"Trash" , "img":"856"},' +
+  '{"id":"857" , "name":"Major Mana Potion" , "type":"Small" , "use":"Trash" , "img":"856"},' +
+  '{"id":"858" , "name":"Major Mana Potion" , "type":"Small" , "use":"Trash" , "img":"856"},' +
+  '{"id":"859" , "name":"Major Mana Potion" , "type":"Small" , "use":"Trash" , "img":"856"},' +
+  '{"id":"860" , "name":"Sun Earring" , "type":"Small" , "use":"Trash" , "img":"860"},' +
+  '{"id":"861" , "name":"Sun Earring" , "type":"Small" , "use":"Trash" , "img":"860"},' +
 
   '{"id":"868" , "name":"Black Knife" , "type":"OneHand" , "use":"Refresh" , "img":"868"},' +
   '{"id":"869" , "name":"Black Knife" , "type":"OneHand" , "use":"Refresh" , "img":"868"},' +
@@ -118,9 +131,12 @@ var data = '{ "items" : [' +
   '{"id":"924" , "name":"Minor Cure Potion" , "type":"Small" , "use":"Trash" , "img":"923"},' +
   '{"id":"925" , "name":"Steel Ring" , "type":"Small" , "use":"Trash" , "img":"925"},' +
   '{"id":"926" , "name":"Steel Ring" , "type":"Small" , "use":"Trash" , "img":"925"},' +
+
+  '{"id":"933" , "name":"Endurance Footwraps" , "type":"Legs" , "use":"Constant" , "img":"933"},' +
   '{"id":"934" , "name":"Drakescale Boots" , "type":"Legs" , "use":"Constant" , "img":"934"},' +
   '{"id":"936" , "name":"Robes of Summoning" , "type":"Body" , "use":"Refresh" , "img":"936"},' +
   '{"id":"939" , "name":"Drakescale Armor" , "type":"Body" , "use":"Constant" , "img":"939"},' +
+  '{"id":"940" , "name":"Steam Armor" , "type":"Body" , "use":"Trash" , "img":"940"},' +
   '{"id":"941" , "name":"Flea-Bitten Shawl" , "type":"Body" , "use":"Constant" , "img":"941"},' +
 
   '{"id":"943" , "name":"Horned Helm" , "type":"Helmet" , "use":"Constant" , "img":"943"},' +
@@ -138,6 +154,8 @@ var data = '{ "items" : [' +
   '{"id":"959" , "name":"Staff of Elements" , "type":"TwoHand" , "use":"Refresh" , "img":"958"},' +
   '{"id":"964" , "name":"Ring of Skulls" , "type":"Small" , "use":"Trash" , "img":"964"},' +
   '{"id":"965" , "name":"Ring of Skulls" , "type":"Small" , "use":"Trash" , "img":"964"}' +
+
+  '{"id":"972" , "name":"Helix Ring" , "type":"Small" , "use":"Trash" , "img":"972"},' +
 ']}';
 
 
